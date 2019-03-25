@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block header %}
+<h1>{% block title %}Project: {{ project['title'] }}{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+<article class="post">
+    <header>
+        <div class="special">
+            {{ project['ldesc'] }}
+        </div>
+    </header>
+    <div>
+    </div>
+    <p class="body">{{ project['sdesc'] }}</p>
+</article>
+{%  endblock %}
+
+

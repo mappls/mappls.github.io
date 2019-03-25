@@ -9,7 +9,9 @@
     <article class="post">
       <header>
         <div>
-          <h1>{{ project['title'] }}</h1>
+          <a class="action" href="{{ url_for('get_project', title=project['title']) }}">
+              <h1>{{ project['title'] }}</h1>
+          </a>
         </div>
       </header>
       <p class="sdesc">{{ project['sdesc'] }}</p>

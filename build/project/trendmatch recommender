@@ -1,0 +1,52 @@
+<!doctype html>
+<title>Project: trendmatch recommender - mappls</title>
+<link rel="stylesheet" href="/static/style.css">
+<nav>
+    <a href="/projects">
+        <img id="header-img" src="/static/my_img1.jpg">
+    </a>
+    <h1 id="header-text">mpav</h1>
+    <ul>
+        <li><a class="action" href="/">Home</a></li>
+        <li><a class="action" href="/projects">Projects</a></li>
+        <li><a class="action" href="/research">Research</a></li>
+    </ul>
+</nav>
+<div>
+    <hr id="header-line">
+</div>
+<section class="content">
+    <header>
+        
+<h1>Project: trendmatch recommender</h1>
+
+    </header>
+    
+<article class="post">
+    <header>
+        <div class="special">
+            Trendmatch is an innovative Danish [startup company](https://trendmatch.dk/) in the fashion business. In one app it connects buyers and sellers - both large and small. Their shopping experience is as easy as Swipe -&gt; Match -&gt; Purchase.
+
+Product recommendation is one of the most important features of the app, with an ultimate goal of increasing the number of matches between users and products. This in turn would result in higher profits for the sellers and better clothes for the buyers.
+
+![trendmatch_app](../static/trendmatch_app.png)
+
+## Design &amp; challenges
+
+The recommender&#39;s design started around the same time as the app&#39;s backend. This made sure that the algorithm will get the needed data, and the rest of the data infrastructure will be able to provide it. This was made possible only by great collaboration between the data, backend and leadership teams of Trendmatch.
+
+The algorithm should be able to function in real-time i.e., in sub-second time intervals, between two user swipes. To be able to get accurate recommendations, we must combine product data with information on both short and long-term user actions. Some of the challenges here arise with incomplete user data, such as unknown user gender or age. Other challenges are connected to the way data is stored and computed, so sub-second predictions are made possible. 
+
+## Development
+
+As of March 2019, the Trendmatch app has been functional for a few months now, collecting a substantial amount of data. Thus, the development process of the recommender is under way! 
+        </div>
+    </header>
+    <div>
+    </div>
+    <p class="body">Trendmatch is an innovative Danish startup in the fashion business, connecting users to fashion products through their iOS app ([link](https://trendmatch.dk/om-os/)).  
+
+The work here designed a real-time recommender system, that connects users and fashion products in sub-second time. </p>
+</article>
+
+</section>
