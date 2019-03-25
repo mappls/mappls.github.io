@@ -1,0 +1,1 @@
+A group of Machine learning & Algorithms projects. It consists of over 20 smaller ML projects in Keras, TensorFlow or scikit-learn, and a few Python implementations of well-known algorithms and data structures. 
