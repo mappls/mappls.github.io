@@ -1,0 +1,23 @@
+<!doctype html>
+<title>{% block title %}{% endblock %} - mappls</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<nav>
+    <a href="{{ url_for('get_projects') }}">
+        <img id="header-img" src="{{ url_for('static', filename='my_img1.jpg') }}">
+    </a>
+    <h1 id="header-text">mpav</h1>
+    <ul>
+        <li><a class="action" href="{{ url_for('get_index') }}">Home</a></li>
+        <li><a class="action" href="{{ url_for('get_projects') }}">Projects</a></li>
+        <li><a class="action" href="{{ url_for('get_research') }}">Research</a></li>
+    </ul>
+</nav>
+<div>
+    <hr id="header-line">
+</div>
+<section class="content">
+    <header>
+        {% block header %}{% endblock %}
+    </header>
+    {% block content %}{% endblock %}
+</section>
