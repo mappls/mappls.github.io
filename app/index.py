@@ -47,13 +47,20 @@ def get_index():
 
 @app.route('/projects')
 def get_projects():
+    projects = []
     pl = get_projects_json()
+    for p in pl:
+        ldesc, sdesc = get_project_descriptions(p['title'])
+        p['sdesc'] = Markup(markdown(sdesc))
+        p['ldesc'] = Markup(markdown(ldesc))
+        projects.append(p)
+
     return render_template('projects.html', projects=pl)
 
 
 @app.route('/research')
 def get_research():
-    return "Research"
+    return render_template('research.html')
 
 
 @app.route('/project/<string:title>')
@@ -86,3 +93,4 @@ if __name__ == '__main__':
         app.run(debug=True)
     elif sys.argv[1] == 'build':
         freezer.freeze()
+        # todo: copy everything from 'build' to root folder

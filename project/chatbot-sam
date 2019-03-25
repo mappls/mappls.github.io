@@ -1,30 +1,19 @@
 <!doctype html>
 <title>Project: chatbot-sam - mappls</title>
 <link rel="stylesheet" href="/static/style.css">
-<div class="headerline">
+<nav>
     <a href="/projects">
         <img id="header-img" src="/static/my_img1.jpg">
     </a>
-    <h1 id="header-text">mappls</h1>
-    <div class="github">
-        <a href="https://github.com/mappls">
-            <img class="github-img" src="/static/github_logo.svg">
-        </a>
-        <a href="https://www.linkedin.com/in/mp3213/">
-            <img class="github-img" src="/static/linkedin_logo.png">
-        </a>
-        <a href="https://scholar.google.com/citations?user=nKImWsoAAAAJ&hl=en&oi=ao">
-            <img class="github-img" src="/static/scholar_logo.png">
-        </a>
-    </div>
-</div>
-<hr>
-<div class="nav-container">
-<ul class="nav-ul">
-    <li><a href="/">Home</a></li>
-    <li><a href="/projects">Projects</a></li>
-    <li><a href="/research">Research</a></li>
-</ul>
+    <h1 id="header-text">mpav</h1>
+    <ul>
+        <li><a class="action" href="/">Home</a></li>
+        <li><a class="action" href="/projects">Projects</a></li>
+        <li><a class="action" href="/research">Research</a></li>
+    </ul>
+</nav>
+<div>
+    <hr id="header-line">
 </div>
 <section class="content">
     <header>
@@ -62,20 +51,10 @@
 <p>Our team at Upskill.ai used the Google Cloud for both development and deployment. Chatbot-Sam was deployed in GCP in a small webapp internally for the Upskill.ai team. Unfortunately, all the building blocks of Upskill.ai (including text-to-speech, lip-syncing and face composition modules) were never deployed together as a single product.</p>
         </div>
     </header>
+    <div>
+    </div>
+    <p class="body"><p>Chatbot Sam is part of the Upskill.ai startup company in Australia (<a href="https://blaze.online/blog/hello-blaze-online/">link</a>). </p>
+<p>Given a text input (question), it's capable of identifying the intent, and generate a response, on a closed-topic subject.</p></p>
 </article>
 
 </section>
-<hr>
-<div class="footer">
-    <div class="github">
-        <a href="https://github.com/mappls">
-            <img class="github-img" src="/static/github_logo.svg">
-        </a>
-        <a href="https://www.linkedin.com/in/mp3213/">
-            <img class="github-img" src="/static/linkedin_logo.png">
-        </a>
-        <a href="https://scholar.google.com/citations?user=nKImWsoAAAAJ&hl=en&oi=ao">
-            <img class="github-img" src="/static/scholar_logo.png">
-        </a>
-    </div>
-</div>
