@@ -8,20 +8,15 @@
         <article class="post">
           <header>
             <div>
-              <h1>{{ post['title'] }}</h1></a>
-              <div class="about">Created on {{ post['created'].strftime('%Y-%m-%d') }}</div>
+              <h1>Bio</h1></a>
+              <div class="about">Bio page</div>
             </div>
           </header>
-          <p class="body">{{ post['body'] }}</p>
+          <p class="body"></p>
         </article>
-        {% if not loop.last %}
           <hr>
-        {% endif %}
-      {% endfor %}
-    {% else %}
         <p></p>
-        <div>While Blogs section is under construction, please check the
-            <a class="action" href="{{ url_for('projects.get_projects') }}">Projects</a> one.
+        <div>While this section is under construction, please check the
+            <a class="action" href="{{ url_for('get_projects') }}">Projects</a> one.
         </div>
-    {% endif %}
 {%  endblock %}

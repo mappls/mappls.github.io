@@ -1,6 +1,7 @@
 
-from flask import Flask, render_template
+from flask import Flask, render_template, Markup
 from flask_frozen import Freezer
+from markdown import markdown
 import json
 import sys
 import os
@@ -41,8 +42,7 @@ def get_project_descriptions(title):
 
 @app.route('/')
 def get_index():
-    pl = get_projects_json()
-    return render_template('projects.html', projects=pl)
+    return render_template('index.html')
 
 
 @app.route('/projects')
@@ -65,9 +65,10 @@ def get_project(title):
             project = p
             break
 
+    print('** title', title)
     ldesc, sdesc = get_project_descriptions(title)
-    project['sdesc'] = sdesc
-    project['ldesc'] = ldesc
+    project['sdesc'] = Markup(markdown(sdesc))
+    project['ldesc'] = Markup(markdown(ldesc))
     return render_template('project.html', project=project)
 
 
