@@ -1,4 +1,14 @@
 <!doctype html>
+<script>
+    function hover(element, imgpath) {
+  element.setAttribute('src', imgpath);
+}
+</script>
+<script>
+function unhover(element, imgpath) {
+  element.setAttribute('src', imgpath);
+}
+</script>
 <title>Project: trendmatch recommender - mappls</title>
 <link rel="stylesheet" href="/static/style.css">
 <div class="headerline">
@@ -8,13 +18,19 @@
     <h1 id="header-text">mappls</h1>
     <div class="github">
         <a href="https://github.com/mappls">
-            <img class="github-img" src="/static/github_logo.svg">
+            <img class="github-img" src="/static/github-logo-off.png"
+                 onmouseover="hover(this, '../static/github-logo-on-smaller.png');"
+                 onmouseout="unhover(this, '../static/github-logo-off.png');">
         </a>
         <a href="https://www.linkedin.com/in/mp3213/">
-            <img class="github-img" src="/static/linkedin_logo.png">
+            <img class="github-img" src="/static/linkedin-logo-off.png"
+                 onmouseover="hover(this, '../static/linkedin-logo-on-smaller.png');"
+                 onmouseout="unhover(this, '../static/linkedin-logo-off.png');">
         </a>
         <a href="https://scholar.google.com/citations?user=nKImWsoAAAAJ&hl=en&oi=ao">
-            <img class="github-img" src="/static/scholar_logo.png">
+            <img class="github-img" src="/static/scholar-logo-off.png"
+                 onmouseover="hover(this, '../static/scholar-logo-on-smaller.png');"
+                 onmouseout="unhover(this, '../static/scholar-logo-off.png');">
         </a>
     </div>
 </div>
@@ -53,13 +69,19 @@
 <div class="footer">
     <div class="github">
         <a href="https://github.com/mappls">
-            <img class="github-img" src="/static/github_logo.svg">
+            <img class="github-img" src="/static/github-logo-off.png"
+                 onmouseover="hover(this, '../static/github-logo-on-smaller.png');"
+                 onmouseout="unhover(this, '../static/github-logo-off.png');">
         </a>
         <a href="https://www.linkedin.com/in/mp3213/">
-            <img class="github-img" src="/static/linkedin_logo.png">
+            <img class="github-img" src="/static/linkedin-logo-off.png"
+                 onmouseover="hover(this, '../static/linkedin-logo-on-smaller.png');"
+                 onmouseout="unhover(this, '../static/linkedin-logo-off.png');">
         </a>
         <a href="https://scholar.google.com/citations?user=nKImWsoAAAAJ&hl=en&oi=ao">
-            <img class="github-img" src="/static/scholar_logo.png">
+            <img class="github-img" src="/static/scholar-logo-off.png"
+                 onmouseover="hover(this, '../static/scholar-logo-on-smaller.png');"
+                 onmouseout="unhover(this, '../static/scholar-logo-off.png');">
         </a>
     </div>
 </div>

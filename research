@@ -9,7 +9,7 @@ function unhover(element, imgpath) {
   element.setAttribute('src', imgpath);
 }
 </script>
-<title>Home - mappls</title>
+<title>Research - mappls</title>
 <link rel="stylesheet" href="/static/style.css">
 <div class="headerline">
     <a href="/projects">
@@ -45,15 +45,14 @@ function unhover(element, imgpath) {
 <section class="content">
     <header>
         
-  <h1>Home</h1>
+  <h1>Research</h1>
 
     </header>
     
         <article class="post">
           <header>
             <div>
-              <h1>Bio</h1></a>
-              <div class="about">Bio page</div>
+              <h1>Projects & publications here..</h1></a>
             </div>
           </header>
           <p class="body"></p>

@@ -2,6 +2,7 @@
 from flask import Flask, render_template, Markup
 from flask_frozen import Freezer
 from markdown import markdown
+import shutil
 import json
 import sys
 import os
@@ -45,7 +46,7 @@ def get_index():
     return render_template('index.html')
 
 
-@app.route('/projects')
+@app.route('/projects', methods=['GET', 'POST'])
 def get_projects():
     projects = []
     pl = get_projects_json()
@@ -58,12 +59,12 @@ def get_projects():
     return render_template('projects.html', projects=pl)
 
 
-@app.route('/research')
+@app.route('/research', methods=['GET', 'POST'])
 def get_research():
     return render_template('research.html')
 
 
-@app.route('/project/<string:title>')
+@app.route('/project/<string:title>', methods=['GET', 'POST'])
 def get_project(title):
     project = {}
     pl = get_projects_json()
@@ -86,6 +87,29 @@ def projects_generator():
         yield "/project/%s" % p['title']
 
 
+def copytree(src, dst, symlinks=False):
+
+    # Remove old files
+    for item in os.listdir(src):
+        print('removing', item)
+        if item in os.listdir(dst):
+            try:
+                os.remove(os.path.join(dst, item))
+            except PermissionError:
+                shutil.rmtree(os.path.join(dst, item))
+
+    # Copy all files
+    for item in os.listdir(src):
+        s = os.path.join(src, item)
+        d = os.path.join(dst, item)
+        if os.path.isdir(s):
+            shutil.move(s, d, symlinks)
+        else:
+            shutil.copy2(s, d)
+
+    shutil.rmtree(src)
+
+
 if __name__ == '__main__':
     if len(sys.argv) < 2:
         sys.exit("Use with 'run' or 'build' argument,")
@@ -93,4 +117,6 @@ if __name__ == '__main__':
         app.run(debug=True)
     elif sys.argv[1] == 'build':
         freezer.freeze()
-        # todo: copy everything from 'build' to root folder
+
+        # Copy all files from build to root folder
+        copytree(src=app.config['FREEZER_DESTINATION'], dst="..")

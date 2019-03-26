@@ -9,7 +9,7 @@ function unhover(element, imgpath) {
   element.setAttribute('src', imgpath);
 }
 </script>
-<title>Home - mappls</title>
+<title>Project: keras-group - mappls</title>
 <link rel="stylesheet" href="/static/style.css">
 <div class="headerline">
     <a href="/projects">
@@ -45,24 +45,17 @@ function unhover(element, imgpath) {
 <section class="content">
     <header>
         
-  <h1>Home</h1>
+<h1>Project: keras-group</h1>
 
     </header>
     
-        <article class="post">
-          <header>
-            <div>
-              <h1>Bio</h1></a>
-              <div class="about">Bio page</div>
-            </div>
-          </header>
-          <p class="body"></p>
-        </article>
-          <hr>
-        <p></p>
-        <div>While this section is under construction, please check the
-            <a class="action" href="/projects">Projects</a> one.
+<article class="post">
+    <header>
+        <div class="special">
+            <p>todo</p>
         </div>
+    </header>
+</article>
 
 </section>
 <hr>
