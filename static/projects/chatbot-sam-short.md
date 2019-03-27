@@ -1,3 +1,1 @@
-Chatbot Sam is part of the Upskill.ai startup company in Australia ([link](https://blaze.online/blog/hello-blaze-online/)). 
-
-Given a text input (question), it's capable of identifying the intent, and generate a response, on a closed-topic subject.
+This is the conversational chatbot part of Upskill.ai - an Australian startup company (now <a target="_blank" href="https://blaze.online/blog/hello-blaze-online/">Blaze Online</a>). Chatbot-Sam can identify the intent in the user's question, and direct it to the sub-module which is most likely to have a correct response. The challenge in the project was training on large text datasets, and figuring out the system design in an area which is still in open research.

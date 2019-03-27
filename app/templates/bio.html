@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h1>{% block title %}Biography{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+        <article class="post">
+          <header>
+            <div>
+              <h1>Short biography here..</h1></a>
+            </div>
+          </header>
+          <p class="body"></p>
+        </article>
+          <hr>
+        <p></p>
+        <div>While this section is under construction, please check the
+            <a class="action" href="{{ url_for('get_projects') }}">Projects</a> one.
+        </div>
+{%  endblock %}

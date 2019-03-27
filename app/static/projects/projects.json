@@ -1,8 +1,22 @@
 [
     {
+        "title": "trendmatch recommender",
+        "category": "machine learning",
+        "period": "2018",
+        "open_source": false,
+        "tools": [
+            "neural nets",
+            "system design",
+            "python",
+            "keras",
+            "azure cloud"
+        ]
+    },
+    {
         "title": "learnbet",
         "category": "machine learning",
         "period": "2016-17",
+        "open_source": "partially",
         "tools": [
             "system design",
             "neural nets",
@@ -18,6 +32,7 @@
         "title": "trenddays",
         "category": "machine learning",
         "period": "2019",
+        "open_source": false,
         "tools": [
             "neural nets",
             "recurrent nns",
@@ -28,20 +43,13 @@
         ]
     },
     {
-        "title": "trendmatch recommender",
-        "category": "machine learning",
-        "period": "2018",
-        "tools": [
-            "neural nets",
-            "system design"
-        ]
-    },
-    {
         "title": "chatbot-sam",
         "category": "machine learning",
         "period": "2017-18",
+        "open_source": false,
         "tools": [
             "system design",
+            "nlp",
             "recurrent nns",
             "intent recognition",
             "python",
@@ -49,31 +57,37 @@
         ]
     },
     {
-        "title": "nlp-chunks",
-        "category": "machine learning",
-        "period": "2018",
-        "tools": [
-            "recurrent nns (bi-dir)",
-            "python",
-            "word embeddings"
-        ]
-    },
-    {
-        "title": "keras-group",
+        "title": "playfield",
         "category": "machine learning",
         "period": "2018-19",
+        "open_source": true,
         "tools": [
             "neural nets",
             "recurrent nns",
             "convnets,python",
             "keras",
+            "scikit-learn",
+            "tensorflow",
             "word embeddings"
         ]
     },
     {
-        "title": "dlspec-group",
+        "title": "nlp-chunks",
         "category": "machine learning",
         "period": "2018",
+        "open_source": true,
+        "tools": [
+            "recurrent nns (bi-dir)",
+            "nlp",
+            "python",
+            "word embeddings"
+        ]
+    },
+    {
+        "title": "dl-group",
+        "category": "machine learning",
+        "period": "2018",
+        "open_source": false,
         "tools": [
             "neural nets",
             "recurrent nns",

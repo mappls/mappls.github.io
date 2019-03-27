@@ -1,1 +1,1 @@
-A group of Machine learning & Algorithms projects. It consists of over 20 smaller ML projects in Keras, TensorFlow or scikit-learn, and a few Python implementations of well-known algorithms and data structures. 
+A group of Machine learning & Algorithms projects I occasionally do for learning and fun. <a target="_blank" href="https://github.com/mappls/Playfield">The project</a> consists of over 20 smaller ML projects in Keras, TensorFlow or scikit-learn, and a few Python implementations of well-known algorithms and data structures. 

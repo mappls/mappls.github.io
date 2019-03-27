@@ -43,7 +43,14 @@ def get_project_descriptions(title):
 
 @app.route('/')
 def get_index():
-    return render_template('index.html')
+    projects = []
+    pl = get_projects_json()
+    for p in pl:
+        ldesc, sdesc = get_project_descriptions(p['title'])
+        p['sdesc'] = Markup(markdown(sdesc))
+        p['ldesc'] = Markup(markdown(ldesc))
+        projects.append(p)
+    return render_template('projects.html', projects=pl)
 
 
 @app.route('/projects', methods=['GET', 'POST'])
@@ -61,7 +68,15 @@ def get_projects():
 
 @app.route('/research', methods=['GET', 'POST'])
 def get_research():
-    return render_template('research.html')
+    with open('static/research/research.md') as file:
+        research = file.read()
+        research = Markup(markdown(research))
+    return render_template('research.html', research=research)
+
+
+@app.route('/bio', methods=['GET', 'POST'])
+def get_bio():
+    return render_template('bio.html')
 
 
 @app.route('/project/<string:title>', methods=['GET', 'POST'])
@@ -91,10 +106,9 @@ def copytree(src, dst, symlinks=False):
 
     # Remove old files
     for item in os.listdir(src):
-        print('removing', item)
         if item in os.listdir(dst):
             try:
-                os.remove(os.path.join(dst, item))
+                os.remove(dst + "/" + item)
             except PermissionError:
                 shutil.rmtree(os.path.join(dst, item))
 
@@ -106,6 +120,12 @@ def copytree(src, dst, symlinks=False):
             shutil.move(s, d, symlinks)
         else:
             shutil.copy2(s, d)
+
+    for file in ['../projects', '../research', '../bio', '../project/chatbot-sam', '../project/dl-group',
+                 '../project/learnbet', '../project/nlp-chunks', '../project/playfield', '../project/trenddays',
+                 '../project/trendmatch recommender']:
+        if os.path.isfile(file):
+            os.rename(file, file + '.html')
 
     shutil.rmtree(src)
 

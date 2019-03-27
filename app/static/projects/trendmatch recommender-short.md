@@ -1,3 +1,1 @@
-Trendmatch is an innovative Danish startup in the fashion business, connecting users to fashion products through their iOS app ([link](https://trendmatch.dk/om-os/)).  
-
-The work here designed a real-time recommender system, that connects users and fashion products in sub-second time. 
+<a target="_blank" href="https://trendmatch.dk/">Trendmatch</a> is an innovative Danish startup in the fashion business, connecting users to fashion products through an iOS app. It's my honour to be part of this great <a target="_blank" href="https://trendmatch.dk/om-os/">team</a>, and develop the Machine Learning capabilities of the app.

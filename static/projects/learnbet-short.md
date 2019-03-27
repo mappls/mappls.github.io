@@ -1,6 +1,1 @@
-An end-to-end Machine Learning project, for forecasting outcomes of football matches. It includes the stages of: data collection, cleaning, storage, processing, predictive modeling, model evaluation, statistical analysis and production deployment. 
-
-There are two versions of this project:
-
-- Old version - created mainly for learning purposes, built many tools from scratch;
-- New version (under construction) - builds up on the gathered data, and will reconstruct the predictive modeling stage.
+An end-to-end Machine Learning project I worked on for fun, and to learn the basics of ML. It includes the stages of: data collection, cleaning, storage, processing, predictive modeling, model evaluation, statistical analysis and production deployment. Most of the tools were built from scratch, such as this tiny <a target="_blank" href="https://github.com/mappls/NeuralNet">neural network</a> class.
