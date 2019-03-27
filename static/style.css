@@ -28,6 +28,10 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+    text-decoration: underline;
+}
+
 .headerline {
     display: flex;
     align-items: center;
@@ -68,6 +72,7 @@ hr {
 
 .nav-ul li a {
     color: #3d556b;
+    text-decoration: None;
 }
 
 .nav-ul li a:hover {
@@ -83,6 +88,10 @@ hr {
     height: 30px;
     width: 30px;
     margin-right:10px;
+}
+
+.github a:hover {
+    text-decoration: None;
 }
 
 /*.special {
@@ -119,4 +128,4 @@ hr {
     height: 100px;
 }
 
-.content { min-height: 600px; resize: vertical; }
+.content { min-height: 400px; resize: vertical; }
