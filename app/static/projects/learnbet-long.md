@@ -4,7 +4,7 @@ This page describes an older version of the project, while a new one is currentl
 
 <hr>
 
-I initially started this project in 2016 with the aim to learn Machine Learning, and all the other steps that come before and after it. Therefore, most of the code is built "from scratch" i.e., I didn't use any ML frameworks, or data preprocessing, or statistical packages, but tried to code the needed bits in Python. For example, I created this small [NeuralNet](https://github.com/Misko07/NeuralNet) project to train a neural network. The forward and back-propagation functions, gradient descent and the rest are coded using the instructions in the famous [Machine Learning course](https://www.coursera.org/learn/machine-learning) by Andrew Ng. Of course, results were really sub-optimal, but the efforts paid off because of the things learned!
+I initially started this project in 2016 with the aim to learn Machine Learning, and all the other steps that come before and after it. Therefore, most of the code is built "from scratch" i.e., I didn't use any ML frameworks, or data preprocessing, or statistical packages, but tried to code the needed bits in Python. For example, I created this small <a target="_blank" href="https://github.com/Misko07/NeuralNet">NeuralNet</a> project to train a neural network. The forward and back-propagation functions, gradient descent and the rest are coded using the instructions in the famous <a target="_blank" href="https://www.coursera.org/learn/machine-learning">Machine learning course</a> by Andrew Ng. Of course, results were really sub-optimal, but the efforts paid off because of the things learned!
 
 ## Data ingestion and storage
 
@@ -18,16 +18,16 @@ In this old Learnbet version there was no data pipe to extract transform and loa
 
 ## Modeling
 
-As mentioned, the modeling part was basically done from scratch, using this small [NeuralNet](https://github.com/Misko07/NeuralNet). So is the model evaluation. One of the first models I used was predicting a 1 / x / 2 outcome (class) of a match. Then different classes had different accuracy / precision / recall. The following figure shows the distribution of match outcomes and predictions, where predictions around 0 are "home win", 0.5 - "draw", and 1 - "away win". 
+The modeling part was basically done from scratch, including the neural networks and model evaluation methods. One of the first models I used was predicting a 1 / x / 2 outcome (class) of a match. Then different classes had different accuracy / precision / recall. The following figure shows the distribution of match outcomes and predictions, where predictions around 0 are "home win", 0.5 - "draw", and 1 - "away win". 
 
-![first_one](../static/first_one_hist.png)
+<img class="intext-img" src="../static/first_one_hist.png">
 
 Later on, after being comfortable with using my neural networks, I continued experimenting with models of the `scikit-learn` library, such as: support vector machines (SVMs), logistic regression, decision trees and random forests.
 
 ## Deploying in production
 The first few models were built to work as "console" apps. You pass the names of the two playing teams (and an optional date), and get as output the prediction. Later on, I setup a small Flask app access predictions (and other data) on the web, as in the next figure. The web app was first set on GCP, but later on switched to AWS. 
 
-![odds_web](../static/odds_web.png)
+<img class="intext-img" src="../static/odds_web.png">
 
 
 ## Reporting, logging, statistics
