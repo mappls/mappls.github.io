@@ -1,1 +1,3 @@
 An NLP project on 1) chunking phrases, 2) name entity recognition in text inputs. Optimised to reach maximum performance on a small training dataset. 
+
+To be completed..

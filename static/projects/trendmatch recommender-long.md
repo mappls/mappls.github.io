@@ -1,8 +1,8 @@
-Trendmatch is an innovative Danish [startup company](https://trendmatch.dk/) in the fashion business. In one app it connects buyers and sellers - both large and small. Their shopping experience is as easy as Swipe -> Match -> Purchase.
+Trendmatch is an innovative Danish <a target="_blank" href="https://trendmatch.dk/">startup company</a> in the fashion business. In one app it connects buyers and sellers - both large and small. Their shopping experience is as easy as Swipe -> Match -> Purchase.
 
 Product recommendation is one of the most important features of the app, with an ultimate goal of increasing the number of matches between users and products. This in turn would result in higher profits for the sellers and better clothes for the buyers.
 
-![trendmatch_app](../static/trendmatch_app.png)
+<img class="intext-img" src="../static/trendmatch_app.png">
 
 ## Design & challenges
 
