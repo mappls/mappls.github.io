@@ -91,7 +91,8 @@
         "tools": [
             "neural nets",
             "recurrent nns",
-            "convnets,python",
+            "convnets",
+            "python",
             "keras",
             "word embeddings"
         ]
